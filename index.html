@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .icon-remove,.icon-check {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero hero-body is-dark container">
+        <h1 class="title is-2">India Location Info</h1>
+        <h2 class="subtitle is-6">Enter a zipcode to get the location info</h2>
+        <form id="zipform">
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input zip is-large" type="text" placeholder="Enter Zipcode">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-map-pin"></i>
+                  </span>
+                  <span class="icon is-small is-right icon-check">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <span class="icon is-small is-right icon-remove">
+                    <i class="fas fa-remove"></i>
+                  </span>
+                </div>
+              </div>
+        </form>
+    </section>
+    <br>
+    <div class="container">
+        <div id="output"></div>
+    </div>
+    <script defer src="main.js"></script>
+</body>
+</html>
